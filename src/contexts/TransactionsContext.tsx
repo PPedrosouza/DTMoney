@@ -20,7 +20,7 @@ interface CreateTransactionInput {
 interface TransactionContextType { // quais informações vou armazanar dentro desse contexto
     transactions: Transaction[];
     fetchTransactions: (query?: string) => Promise<void>;
-    CreateTransaction: (data: CreateTransactionInput) => Promise<void>
+    createTransaction: (data: CreateTransactionInput) => Promise<void>
 }
 
 interface TransactionProviderProps {
